@@ -2,7 +2,7 @@ const urlParams = new URLSearchParams(window.location.search);
 const roomId = urlParams.get("roomId");
 
 // Replace 'your-websocket-url' with your WebSocket server URL
-const websocketUrl = "ws://localhost:8081"; // Make sure to use the correct WebSocket port (usually 8080)
+const websocketUrl = "ws://134.209.121.252:8081"; // Make sure to use the correct WebSocket port (usually 8080)
 const socket = new WebSocket(`${websocketUrl}?roomId=${roomId}`);
 
 socket.addEventListener("open", () => {
