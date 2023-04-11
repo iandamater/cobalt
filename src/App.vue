@@ -42,7 +42,7 @@ export default {
       }
     },
     initWebSocket() {
-      const websocketUrl = "ws://localhost:8081";
+      cconst websocketUrl = process.env.VUE_APP_WEBSOCKET_URL;
       this.socket = new WebSocket(`${websocketUrl}?roomId=${this.roomId}`);
 
       this.socket.addEventListener("open", () => {
