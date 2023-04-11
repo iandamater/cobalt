@@ -42,7 +42,7 @@ export default {
       }
     },
     initWebSocket() {
-      const websocketUrl = "ws://134.209.121.252:8081;
+      const websocketUrl = "ws://134.209.121.252:8081";
       this.socket = new WebSocket(`${websocketUrl}?roomId=${this.roomId}`);
 
       this.socket.addEventListener("open", () => {
